@@ -41,6 +41,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.9311786686868071" blue="0.93172723299487625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="noteModificationTimeLabel" destination="ftx-9N-g2S" id="dHO-yN-JDe"/>
@@ -56,6 +57,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Notes" id="pMI-4O-VdX">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ehE-Pg-W3p">
+                            <color key="tintColor" red="0.55234375000000002" green="0.1466340341" blue="0.3947582697" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="kRF-ks-i3U" kind="show" identifier="addNote" id="ik5-rC-xHN"/>
                             </connections>
@@ -66,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="1501.5999999999999" y="266.71664167916043"/>
         </scene>
-        <!--Title-->
+        <!--Display Note View Controller-->
         <scene sceneID="4FU-qz-EhW">
             <objects>
                 <viewController id="kRF-ks-i3U" customClass="DisplayNoteViewController" customModule="MakeSchoolNotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,8 +82,9 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="26P-pQ-teT">
                                 <rect key="frame" x="67" y="135" width="240" height="405"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="backgroundColor" red="1" green="0.93117866869999999" blue="0.93172723300000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.55234375000000002" green="0.1466340341" blue="0.3947582697" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -103,13 +106,15 @@
                             <constraint firstItem="26P-pQ-teT" firstAttribute="top" secondItem="suX-iE-CeJ" secondAttribute="bottom" constant="5" id="xJR-sK-OUt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="uDH-OH-pMr">
+                    <navigationItem key="navigationItem" id="uDH-OH-pMr">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ym8-DD-LC8">
+                            <color key="tintColor" red="0.55234375000000002" green="0.1466340341" blue="0.3947582697" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="9I6-wP-AST" kind="unwind" identifier="cancel" unwindAction="unwindToListNotesViewController:" id="7Vb-Q2-ODo"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="J6w-oM-cyo">
+                            <color key="tintColor" red="0.55234375000000002" green="0.1466340341" blue="0.3947582697" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="9I6-wP-AST" kind="unwind" identifier="save" unwindAction="unwindToListNotesViewController:" id="KQL-lC-aoG"/>
                             </connections>
